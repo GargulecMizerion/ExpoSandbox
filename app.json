@@ -2,7 +2,7 @@
   "expo": {
     "name": "ExpoSandbox",
     "slug": "ExpoSandbox",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -19,7 +19,9 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.kayman2115.ExpoSandbox",
+      "versionCode": 2
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +33,11 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "6e43e51f-bb27-4d15-b541-baad77458911"
+      }
     }
   }
 }
