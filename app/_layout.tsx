@@ -15,6 +15,7 @@ export default function RootLayout() {// Tworzy layout ekranu dla komponentow zn
             <Stack.Screen name="index" options={{headerShown: false,}}/>
             <Stack.Screen name="details"/>
             <Stack.Screen name="(tabs)" options={{headerShown: false,}}/>
+            <Stack.Screen name="(details)" options={{headerShown: false,}}/>
         </Stack>
     );
 }
