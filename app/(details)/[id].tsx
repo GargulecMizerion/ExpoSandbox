@@ -1,7 +1,10 @@
-import {Text, View} from "react-native";
+import {Text, View, StyleSheet} from "react-native";
 import React, {useEffect, useState} from "react";
+
 import {Products} from "@/app/(data)/data";
 import {useLocalSearchParams} from "expo-router";
+import ProductNotFound from "@/app/(details)/productNotFound";
+import ProductView from "@/app/(details)/productView";
 
 
 export default function Product() {
@@ -23,9 +26,17 @@ export default function Product() {
 
     return (
         <View>
-            {product ? (<Text>{product.name}</Text>) : <Text>Produkt o podanym id nie istnieje</Text>}
+            {product ? (<ProductView product={product}/>) : <ProductNotFound id={id.toString()}/>}
 
         </View>
     );
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: 'center',
+    }
+})
 
